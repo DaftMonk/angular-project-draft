@@ -1,0 +1,41 @@
+{
+  "name": "test",
+  "dependencies": {
+    "angular": "^1.3.12",
+    "angular-route": "^1.3.11"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.3.11",
+    "broccoli": "^0.13.3",
+    "broccoli-bower": "latest",
+    "broccoli-browserify": "^0.1.0",
+    "broccoli-coffee": "latest",
+    "broccoli-ember-hbs-template-compiler": "^1.6.1",
+    "broccoli-env": "latest",
+    "broccoli-es6-concatenator": "latest",
+    "broccoli-es6-module-transpiler": "^0.5.0",
+    "broccoli-es6modules": "^0.4.3",
+    "broccoli-funnel": "^0.2.0",
+    "broccoli-merge-trees": "latest",
+    "broccoli-sass": "latest",
+    "broccoli-static-compiler": "latest",
+    "broccoli-template": "latest",
+    "broccoli-traceur": "^0.12.0",
+    "broccoli-uglify-js": "latest",
+    "broccoli-unwatched-tree": "0.1.1",
+    "ember-cli": "^0.1.11",
+    "es6-module-transpiler": "^0.9.0",
+    "es6-module-transpiler-amd-formatter": "^0.3.0",
+    "es6-module-transpiler-package-resolver": "^1.0.1",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "~0.1.3",
+    "karma-jasmine": "~0.1.5",
+    "karma-ng-html2js-preprocessor": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-spec-reporter": "0.0.13",
+    "lodash-node": "^3.0.1"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  }
+}
