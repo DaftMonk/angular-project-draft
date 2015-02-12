@@ -21,16 +21,14 @@ var AngularApp = function () {
     description: 'Funnel: App JS Files'
   });
 
-  var transpiledJS = compileModules(jsFiles, {
+  this.transpiledJS = compileModules(jsFiles, {
     formatter: new AMDFormatter(),
     output: 'app/'
   });
-
-  this.trees = mergeTrees([transpiledJS, 'client/app']);
 };
 
 AngularApp.prototype.toTree = function () {
-  return this.trees;
+  return mergeTrees([this.transpiledJS, 'client/app']);
 };
 
 var broccoliTree = new AngularApp().toTree();
