@@ -1,11 +1,7 @@
-angular
-  .module('testApp')
-  .directive('navbar', navbar);
-
 function navbar() {
   var directive = {
     link: link,
-    templateUrl: 'client/app/components/navbar/navbar.directive.html',
+    templateUrl: 'components/navbar/navbar.directive.html',
     restrict: 'EA'
   };
   return directive;
@@ -13,3 +9,5 @@ function navbar() {
   function link(scope, element, attrs) {
   }
 }
+
+export default navbar;

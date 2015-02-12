@@ -1,6 +1,5 @@
-angular
-  .module('testApp')
-  .config(appConfig);
+import ngApp from './app.module';
+import mainRouteConfig from './routes/main/main.route.js';
 
-function appConfig() {
-}
+ngApp
+  .config(mainRouteConfig);
