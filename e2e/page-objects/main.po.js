@@ -1,5 +1,9 @@
 var MainPage = function() {
+
+  this.get = function() {
+    return browser.get('/');
+  };
 };
 
-module.exports = new MainPage();
+module.exports = MainPage;
 

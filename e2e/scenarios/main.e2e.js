@@ -1,9 +1,10 @@
+var MainPage = require('../page-objects/main.po');
+
 describe('Main View', function() {
-  var page;
+  var mainPage = new MainPage();
 
   beforeEach(function() {
-    browser.get('/');
-    page = require('./main.po');
+    mainPage.get();
   });
 
   it('should do something', function() {
