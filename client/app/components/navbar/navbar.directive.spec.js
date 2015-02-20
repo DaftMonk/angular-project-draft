@@ -1,8 +1,8 @@
 describe('Directive: navbar', function () {
 
-  beforeEach(module('testApp'));
-
   var element, scope;
+
+  beforeEach(module('testApp'));
 
   beforeEach(inject(function ($rootScope) {
     scope = $rootScope.$new();
