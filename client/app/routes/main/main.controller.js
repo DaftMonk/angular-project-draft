@@ -1,3 +1,4 @@
+/* @ngInject */
 function MainCtrl() {
   this.greeting = 'Hi there!';
 }

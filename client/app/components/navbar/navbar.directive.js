@@ -1,3 +1,4 @@
+/* @ngInject */
 function navbar() {
   var directive = {
     link: link,

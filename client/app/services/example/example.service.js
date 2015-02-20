@@ -1,3 +1,4 @@
+/* @ngInject */
 function example() {
   this.saySomething = function() {
     return 'something';
