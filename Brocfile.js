@@ -38,14 +38,7 @@ var AngularApp = function () {
     description: 'Funnel: App JS Files'
   });
 
-  this.libraries = pickFiles('client/bower_components', {
-    srcDir: '.',
-    destDir: '.',
-    files: [
-      'angular/angular.js',
-      'angular-route/angular-route.js'
-    ]
-  });
+  this.libraries = mergeTrees(findBowerTrees());
 
   this.transpiledJS = compileModules(this.appJs, {
     output: 'app.js'
@@ -63,8 +56,7 @@ var AngularApp = function () {
 
   this.concatenatedJS = concat(this.scripts, {
     inputFiles: [
-      'angular/angular.js',
-      'angular-route/angular-route.js',
+      'angular.js',
       '**/*.js'
     ],
     outputFile: '/app.js'
