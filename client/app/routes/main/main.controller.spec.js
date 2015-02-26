@@ -1,8 +1,10 @@
+import App from '../../app.module';
+
 describe('Controller: MainCtrl', function() {
 
   var MainCtrl, scope;
 
-  beforeEach(module('testApp'));
+  beforeEach(module(App.name));
 
   beforeEach(inject(function($controller, $rootScope) {
     scope = $rootScope.$new();

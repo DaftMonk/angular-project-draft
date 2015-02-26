@@ -1,8 +1,11 @@
+import App from '../../app.module';
+
 describe('Directive: navbar', function () {
 
   var element, scope;
 
-  beforeEach(module('testApp'));
+  beforeEach(module(App.name));
+  beforeEach(module('components/navbar/navbar.directive.html'));
 
   beforeEach(inject(function ($rootScope) {
     scope = $rootScope.$new();
